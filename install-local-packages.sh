@@ -2,10 +2,12 @@
 
 # Globals
 PACKAGE_DIR='/opt/packages'
+DEB_ARCHIVE_DIR='/var/cache/apt/archives/'
 CL_VERSION='23.12.7'
 
-# Install generic debian packages.
-apt install -y ${PACKAGE_DIR}/*.deb
+# Install/Copy generic debian packages.
+#apt install -y ${PACKAGE_DIR}/*.deb
+#mv ${PACKAGE_DIR}/*.deb ${DEB_ARCHIVE_DIR}/
 
 # Install docker.
 dpkg -i ${PACKAGE_DIR}/containerd.io_*.deb \
