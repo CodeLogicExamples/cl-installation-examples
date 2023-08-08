@@ -4,7 +4,7 @@ $packageUrls = @(
 )
 
 # Specify the directory where the packages will be downloaded
-$downloadDir = "C:\YOUR_PATH_HERE"
+$downloadDir = "$PWD"
 
 # Create the download directory if it doesn't exist
 if (-Not (Test-Path -Path $downloadDir -PathType Container)) {
